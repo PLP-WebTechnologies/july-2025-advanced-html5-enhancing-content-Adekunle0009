@@ -1,0 +1,176 @@
+<!DOCTYPE html> <!-- HTML5 here -->
+<html lang="en"> <!--language set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes layout responsive on all devices -->
+    <title>Enhanced Form - Manda 1 Year Apprenticeship</title> <!-- Page title shown in browser tab -->
+</head>
+<body>
+
+<!-- HEADER: Contains the site title and program name -->
+<header>
+    <h1>Manda Technologies</h1> <!-- Main heading for the organization -->
+    <h2>1-Year Solar Apprenticeship Program</h2> <!-- Subheading for the program name -->
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+
+    <!-- SECTION 1: Program overview text and list -->
+    <section>
+        <h3>Program Overview</h3> <!-- Section heading -->
+        <p>
+            Welcome to the enrolment page for Manda's 1-Year Solar Apprenticeship Program. 
+            This program provides practical, hands-on skills in solar installation, maintenance, and system design.
+        </p>
+        
+        <!-- Unordered list for program facts -->
+        <ul>
+            <li>Duration: 12 months (Full-time)</li>
+            <li>Focus Areas: Solar PV, Inverters, Battery Systems</li>
+            <li>Location: Manda Technologies Training Center, Nigeria</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 2: Table showing a sample weekly schedule -->
+    <section>
+        <h3>Sample Weekly Schedule</h3>
+        <!-- Border, cellpadding, cellspacing are old-school attributes but still valid here -->
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr> <!-- Table row for column headings -->
+                    <th>Day</th> <!-- Table header cell -->
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Each row represents one day’s schedule -->
+                <tr>
+                    <td>Monday</td>
+                    <td>Solar Basics & Safety</td>
+                    <td>9:00 AM – 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>PV Installation Practical</td>
+                    <td>9:00 AM – 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Battery Systems & Wiring</td>
+                    <td>9:00 AM – 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Inverter Configurations</td>
+                    <td>9:00 AM – 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Project Supervision & Testing</td>
+                    <td>9:00 AM – 2:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SECTION 3: Media preview -->
+    <section>
+        <h3>Training Center Preview</h3>
+        <!-- Example placeholder image showing the training center -->
+        <img src="https://via.placeholder.com/800x250.png?text=Manda+Solar+Training+Center" 
+             alt="Manda Training Center">
+    </section>
+
+    <!-- SECTION 4: Enrolment Form -->
+    <section>
+        <h3>Enrolment Form</h3>
+
+        <!-- Form starts here; POST method for secure data submission; autocomplete enabled -->
+        <form action="#" method="post" autocomplete="on">
+            
+            <!-- GROUP 1: Personal Information -->
+            <fieldset> <!-- Groups related inputs together -->
+                <legend>Personal Information</legend> <!-- Describes this group -->
+
+                <!-- Required text input with placeholder -->
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <!-- Email field with validation and autocomplete -->
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+                <!-- Phone number with tel type -->
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+2348012345678" required autocomplete="tel">
+
+                <!-- Date picker input -->
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <!-- Dropdown list for gender -->
+                <label for="gender">Gender *</label>
+                <select id="gender" name="gender" required>
+                    <option value="">-- Select --</option> <!-- Placeholder option -->
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </fieldset>
+
+            <!-- GROUP 2: Program Details -->
+            <fieldset>
+                <legend>Program Details</legend>
+
+                <!-- Dropdown for location selection -->
+                <label for="location">Preferred Training Location *</label>
+                <select id="location" name="location" required>
+                    <option value="">-- Select --</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="abuja">Abuja</option>
+                    <option value="ibadan">Ibadan</option>
+                </select>
+
+                <!-- Optional referrer input -->
+                <label for="referrer">How did you hear about us?</label>
+                <input type="text" id="referrer" name="referrer" placeholder="e.g., Facebook, Friend, Radio">
+
+                <!-- File upload restricted to image types -->
+                <label for="photo">Upload Passport Photograph *</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                <!-- Read-only field with pre-filled value -->
+                <label for="appid">Application ID</label>
+                <input type="text" id="appid" name="appid" value="AUTO-GENERATED" readonly>
+            </fieldset>
+
+            <!-- GROUP 3: Additional Information -->
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <!-- Multi-line text area -->
+                <label for="experience">Do you have any prior experience with solar?</label>
+                <textarea id="experience" name="experience" rows="4" placeholder="Write briefly about your experience..."></textarea>
+
+                <!-- Checkbox for agreement -->
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    I confirm that the information provided is accurate.
+                </label>
+            </fieldset>
+
+            <!-- Submit button -->
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+</main>
+
+<!-- FOOTER: Copyright -->
+<footer>
+    <p>&copy; 2025 Manda Technologies. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
